@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303031;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.imagem {
+    width: 150px;
+    height: 200px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 1.5s;
+    position: relative;
+}
+
+svg,
+svg rect {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    width: 160px;
+    height: 210px;
+    top: 0;
+    left: 0;
+    fill: transparent;
+    z-index: -1;
+}
+
+.div1 {
+    position: relative;
+    min-width: 150px;
+    margin: 14px;
+}
+
+a svg rect {
+    fill: transparent;
+    stroke-width: 7;
+    transition: all 1s;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 0;
+    animation: teste 4s linear infinite;
+}
+
+@keyframes teste {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 360;
+    }
+    100% {
+        stroke-dashoffset: 720;
+    }
+}
+
+
+/*efeito neon 1*/
+
+#css,
+#css rect {
+    stroke: blue;
+    filter: blur(1px) drop-shadow(0 0 10px blue) drop-shadow(0 0 200px blue);
+}
+
+#html,
+#rect {
+    stroke: orange;
+    filter: blur(1px) drop-shadow(0 0 10px orange) drop-shadow(0 0 200px orange);
+}
+
+#js,
+#js rect {
+    stroke: yellow;
+    filter: blur(1px) drop-shadow(0 0 10px yellow) drop-shadow(0 0 200px yellow);
+}
+
+#arduino,
+#arduino rect {
+    stroke: rgb(14, 111, 79);
+    filter: blur(1px) drop-shadow(0 0 10px rgb(14, 111, 79)) drop-shadow(0 0 200px rgb(14, 111, 79));
+}
